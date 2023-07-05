@@ -1,6 +1,6 @@
 from pages.main_page import MainePage
 from pages.filter_category_page import FilterCategoryPage
-from pages.jewelry_catalog_page import JeweryCatalogPage
+from pages.jewelry_catalog_page import JewelryCatalogPage
 from pages.basket_page import BasketPage
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -21,7 +21,7 @@ def test_buy_product(set_up, set_group):
     filter_category_page = FilterCategoryPage(driver)
     filter_category_page.select_filters()
 
-    jewelry_catalog = JeweryCatalogPage(driver)
+    jewelry_catalog = JewelryCatalogPage(driver)
     catalog_product_name, catalog_product_price, catalog_product_size = jewelry_catalog.test_product()
     jewelry_catalog.go_to_basket()
 

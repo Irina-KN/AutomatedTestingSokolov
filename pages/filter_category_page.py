@@ -93,7 +93,6 @@ class FilterCategoryPage(Base):
     def click_button_view_products(self):
         self.button_view_products().click()
 
-
     def select_store(self):
         self.click_button_filter_store()
         self.click_button_filter_store_list()

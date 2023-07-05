@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class JeweryCatalogPage(Base):
+class JewelryCatalogPage(Base):
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -57,14 +57,9 @@ class JeweryCatalogPage(Base):
         self.button_product_size().click()
         self.screenshot()
 
-
-
     def select_product(self):
         self.screenshot()
         self.move_field_product()
-
-
-
 
     def get_value_field_product_name(self):
         product_name = self.field_product_name().text
@@ -86,8 +81,6 @@ class JeweryCatalogPage(Base):
 
     def select_product_size(self):
         self.click_button_product_size()
-
-
 
     def test_product(self):
         self.select_product()
