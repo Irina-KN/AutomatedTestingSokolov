@@ -48,4 +48,3 @@ class BasketPage(Base):
         size = self.get_value_product_field_size()
         return name, price, size
 
-

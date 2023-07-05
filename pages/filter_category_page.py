@@ -53,9 +53,6 @@ class FilterCategoryPage(Base):
     def button_view_products(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.CSS_SELECTOR, self.view_products)))
 
-
-# действия
-
     def click_button_filter_subcategory(self):
         self.button_filter_subcategory().click()
 
@@ -96,7 +93,6 @@ class FilterCategoryPage(Base):
     def click_button_view_products(self):
         self.button_view_products().click()
 
-# подробно
 
     def select_store(self):
         self.click_button_filter_store()
