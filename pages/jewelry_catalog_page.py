@@ -6,12 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class JewelryCatalogPage(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
-    category_page_url = 'https://sokolov.ru/jewelry-catalog/rings/'
-
     catalog_product = '.product-list.catalog.sklv .sklv-product-link:nth-child(8)'
     catalog_product_basket = '.product-list.catalog.sklv .sklv-product-link:nth-child(8) .sklv-product-action'
     catalog_product_price = '.product-list.catalog.sklv .sklv-product-link:nth-child(8) div.sklv-prices__bottom'

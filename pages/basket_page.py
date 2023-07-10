@@ -6,12 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class BasketPage(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
-    basket_page_url = 'https://sokolov.ru/basket/'
-
     basket_product = '.checkout-products .checkout-product:nth-child(1)'
     basket_product_price = '.checkout-products .checkout-product:nth-child(1) div .checkout-product__info .checkout-product__info-row div .checkout-product__cost'
     basket_product_name = '.checkout-products .checkout-product:nth-child(1) div .checkout-product__info .checkout-product__info-row a'

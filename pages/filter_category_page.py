@@ -6,12 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class FilterCategoryPage(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
-    category_page_url = 'https://goldapple.ru/uhod'
-
     filter_subcategory = '#subcategory .filters-list .filter-parent-item:nth-child(3) div label'
     filter_delivery = '#delivery_type .filters-list .filter-parent-item:nth-child(4)'
     filter_store = '#store_id .btn-show'

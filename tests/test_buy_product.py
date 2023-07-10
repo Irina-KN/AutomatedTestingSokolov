@@ -7,6 +7,9 @@ from selenium.webdriver.chrome.options import Options
 
 
 def test_buy_product(set_up, set_group):
+    """Steps test: opening a website, choosing a city,
+    choosing a category, filtering, selecting a product
+    and adding it to the basket, going to the basket."""
 
     option = Options()
     option.add_argument("--disable-notifications")

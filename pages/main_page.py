@@ -6,10 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class MainePage(Base):
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-
     main_page_url = 'https://sokolov.ru/'
 
     search_city = '.form-input.search-city'
