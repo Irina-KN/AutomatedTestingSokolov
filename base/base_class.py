@@ -1,8 +1,6 @@
 from selenium.webdriver import ActionChains
 import datetime
 
-import screen2
-
 
 class Base:
 

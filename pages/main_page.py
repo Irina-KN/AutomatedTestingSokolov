@@ -66,3 +66,13 @@ class MainePage(Base):
         self.click_button_catalog()
         self.click_button_category()
 
+
+    def catalog_1(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.LINK_TEXT, 'КАТАЛОГ')))
+
+
+    def catalog_click(self):
+        self.catalog_1().click()
+
+
+
